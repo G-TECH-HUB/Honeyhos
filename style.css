@@ -1,0 +1,202 @@
+/* CSS Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 8px 20px;
+    position: relative;
+   background-color: #bbbbbb60;
+}
+
+header figure {
+    margin: 0;
+}
+
+header figure img {
+    max-height: 50px;
+}
+
+nav {
+    position: fixed;
+    top: 80px; /* Adjust based on header height */
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    z-index: 10;
+    transform: translateY(-140%); /* Start off-screen to the left */
+    transition: transform 0.4s ease-in-out; /* Smooth transition for the entire nav */
+}
+
+nav.open {
+    display: flex;
+    transform: translateY(0); /* Slide into view */
+}
+
+nav p,
+nav details {
+    width: 100%;
+}
+
+nav details summary {
+    color:black;
+    cursor: pointer;
+    outline: none;
+}
+
+.drop-menu {
+    border: 1px solid rgba(0, 0, 0, 0.432);
+    color: black;
+    padding: 10px 60px 0px 60px;
+    margin-top: 7px;
+    width: 100%;
+    transition: transform 0.8s ease-in-out;
+    border-radius: 5px;
+}
+
+nav details[open] .drop-menu {
+    display: block;
+}
+
+#details {
+   padding: 0px 0px 17px 0px;
+   line-height: 10px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+}
+nav p a {
+    text-decoration: none;
+    display: block;
+    color:black;
+}
+
+#nav {
+   padding: 10px 0px 0px 0px;
+   line-height: 10px;
+  
+}
+
+#open-nav,
+#close-nav {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    display: block;
+    align-items: center;
+    text-align: center;
+   color: #555;
+    
+}
+
+#close-nav {
+   margin-top: -13px;
+}
+.bx-menu, .bx-x {
+   border: 2px solid black;
+   padding: 0px 8px;
+   border-radius: 5px;
+}
+#close-nav {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: none;
+}
+
+
+
+header.nav-open #open-nav {
+    display: none;
+}
+
+header.nav-open #close-nav {
+    display: block;
+}
+
+.reserve-btn {
+   background-color: rgb(255, 137, 3);
+   padding: 10px 15px 14px 15px;
+   border: none;
+   color: white;
+   font-weight: lighter;
+   font-size: 19px;
+}
+
+
+/* Styles for larger screens (769px and up) */
+@media screen and (min-width: 769px) {
+    nav {
+        position: static;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        padding: 0;
+        transform: translateX(0);
+        transition: none;
+    }
+
+    nav p {
+        margin: 0 1rem;
+    }
+
+    nav details {
+        margin: 0 1rem;
+        position: relative; /* For dropdown positioning */
+    }
+
+    nav details summary {
+        padding: 0.5rem;
+    }
+
+    .drop-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #555;
+        border-radius: 5px;
+        padding: 0.5rem;
+        margin-top: 0.5rem;
+        display: none; /* Initially hidden on larger screens */
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
+
+    nav details[open] .drop-menu {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    nav p a {
+        display: inline;
+        padding: 0.5rem;
+    }
+
+    #open-nav,
+    #close-nav {
+        display: none;
+    }
+}
