@@ -1,0 +1,377 @@
+/* CSS Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif; 
+    background-color: #a7a5a560;
+}
+header {
+	background-color: white;
+	color: white;
+	justify-content: space-between;
+    padding: 0px 40px;
+	align-items: center;
+  }
+
+  header > .navbar li  {
+	text-transform: uppercase;
+    font-size: 15px;
+  }
+
+  .navbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 7px 80px;
+	position: relative;
+  }
+  
+  .hamburger {
+	display: none;
+	font-size: 26px;
+	cursor: pointer;
+	color: black;
+  }
+  
+  /* Navigation list */
+  .nav-links {
+	display: flex;
+	list-style: none;
+	align-content: center;
+	gap: 100px;
+	align-items: center;
+  }
+  
+  .nav-links a {
+	text-decoration: none;
+	color: black;
+  }
+  
+   #btn {
+	background-color: orange;
+	padding: 10px 16px;
+	text-transform: uppercase;
+	position: relative;
+	border-radius: 0px;
+	color: black;
+	font-weight: bold;
+  }
+  
+  /* Dropdown styles */
+  .dropdown {
+	position: relative;
+  }
+  
+  .dropdown-menu {
+	display: none;
+	position: absolute;
+	top: 20px;
+	left: 0;
+	background: white;
+	min-width: 150px;
+	box-shadow: 0 4px 8px #ff964133;
+	z-index: 100;
+	flex-direction: column;
+	
+  }
+  
+  .dropdown-menu li a {
+	color: #333;
+	padding: 10px 15px;
+    text-transform: capitalize;
+	display: block;
+  }
+  
+  .dropdown-menu li a:hover {
+	background-color: #eee;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+	display: flex;
+  }
+  
+  /* Hide dropdown toggles by default */
+  .dropdown input[type="checkbox"] {
+	display: none;
+  }
+  
+  .dropdown-label {
+	color: black;
+    list-style: none;
+	cursor: pointer;
+	display: block;
+  }
+  
+  /* Responsive styles */
+  #menu-toggle {
+	display: none;
+  }
+
+
+.social-sidebar {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  padding: 8px 15px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: 1000;
+  gap: 10px;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  transition: transform 0.2s;
+}
+
+.social-icon img {
+  width: 20px;
+  height: 20px;
+  filter: invert(1);
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Brand Colors */
+.facebook {
+  background-color: #1877F2; /* Facebook Blue */
+}
+
+.twitter {
+  background-color: #1DA1F2; /* Twitter Blue */
+}
+
+.linkedin {
+  background-color: #0A66C2; /* LinkedIn Blue */
+}
+
+
+/* Hero Section */
+
+.hero-section {
+    height: 90vh;
+    background-image: url(Images/Hero\ Image/hero1.jpg);
+    background-size: cover;
+    animation-name: hero-background-changer;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes hero-background-changer {
+    0% {
+        background-image: url(Images/Hero\ Image/hero1.jpg);
+    }
+    25% {
+        background-image: url(Images/Hero\ Image/hero2.jpg);
+    }
+    50% {
+        background-image: url(Images/Hero\ Image/hero3.jpg);
+    }
+    75% {
+        background-image: url(Images/Hero\ Image/hero4.jpg);
+    }
+    
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: left;
+    color: white;
+    background: rgba(0, 0, 0, 0.308);
+    height: 90vh;
+    padding: 0px 0px 0px 10px;
+    line-height: 18px;
+}
+
+.intro {
+    margin-bottom: 60px;
+}
+
+.intro-text{
+    line-height: 30px;
+    padding-right: 50px;
+}
+
+#join-btn {
+    background-color: rgb(255, 137, 3);
+    border: none;
+    padding: 8px ;
+    margin-top: -40px;
+    color: black;
+}
+
+
+
+#join-btn:active {
+    background-color: rgb(255, 148, 25);
+    transform: scale(1.2);
+    transition: transform 0.1s;
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+}
+
+
+#head1 {
+    font-size: 1.9rem;
+    padding-bottom: 10px;
+    width: 15.5rem;
+    
+}
+
+
+
+.service-section {
+    background-color: #a7a5a544;
+    padding-top: 20px;
+} 
+
+.service-hr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(61, 61, 61);
+}
+.hr-line {
+    height: 3px;
+    width: 70px;
+    border: none;
+    background-color: rgb(255, 137, 3);
+
+}
+
+.service-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0px;
+    row-gap: 20px;
+}
+    
+    .services {
+        /* background-image: url(Images/Services\ Image/Event.jpg); */
+       width: 90%;
+       height: 40vh;
+       background-size: cover;
+       border-radius: 15px;
+    }
+
+    .service-overlay {
+        background: linear-gradient(transparent, rgba(0, 0, 0, 0.514));
+        width: 100%;
+       height: 40vh;
+       display: flex;
+       justify-content: center;
+       align-items: end;
+       border-radius: 15px;
+    }
+
+    .service-title  {
+        color: white;
+        font-size: 1.2rem;  
+        padding-bottom: 5px;  
+        width: 100%;
+        text-align: center;
+        
+    }
+
+.join-us {
+    background-color: #a7a5a560;
+    display: flex;
+    flex-direction: column;
+    align-items: center;padding-bottom: 10px;
+    padding-top: 20px;
+}
+.join-text {
+    text-align: center;
+}
+
+
+
+.carousel-container {
+  position: relative;
+  width: 80%;
+  max-width: 500px;
+  overflow: hidden;
+  background: rgba(250, 194, 131, 0.822);
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-wrapper {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+  will-change: transform;
+}
+
+.job-card {
+  flex: 0 0 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  text-align: center;
+}
+
+.job-card h3 {
+  margin-top: 0;
+}
+
+.apply-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: rgba(78, 78, 78, 0.377);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.6);
+  color: white;
+  border: none;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
+/* Footer */
+
+.footer-section {
+    background-color: rgb(160, 159, 159);
+    height: 50vh;
+}
