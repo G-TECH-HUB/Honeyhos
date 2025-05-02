@@ -18,45 +18,7 @@
 
 @media screen and (min-width: 781px) and (max-width: 960px) {
 
-   .header {
-      display: flex;
-      justify-content: space-between;
-   }
-    nav {
-        position: static;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-        height: auto;
-        background-color: transparent;
-        padding-right: 0;
-        transform: translateX(0);
-        transition: none;
-        align-items: center;
-        text-align: center;
-    }
-
-   .reserve-btn {
-   background-color: rgb(255, 137, 3);
-   padding: 10px 15px 14px 15px;
-   border: none;
-   color: white;
-   font-weight: lighter;
-   font-size: 19px;
-}
-
-.reserve-btn:active {
-    background-color: rgb(255, 148, 25);
-    color: grey;
-    transform: scale(1.1);
-    transition: 0.1s ease-in-out;
-}
-
-
-
-
+   
     .drop-menu {
         position: absolute;
         top: 100%;
@@ -72,22 +34,6 @@
         width: 50%;
     }
 
-    nav details[open] .drop-menu {
-        display: block;
-        opacity: 1;
-        visibility: visible;
-        transform: translateY(0);
-    }
-
-    nav p a {
-        display: inline;
-        padding: 0.5rem;
-    }
-
-    #open-nav,
-    #close-nav {
-        display: none;
-    }
 
     .service-container {
       display: flex;
@@ -109,45 +55,7 @@
 }
 
 @media screen and (min-width: 961px) and (max-width: 1300px) {
-      nav {
-        position: static;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        width: 70%;
-        height: auto;
-        background-color: transparent;
-        transform: translateX(0);
-        transition: none;
-        align-items: center;
-        text-align: center;
-    }
-
-    .reserve-btn2 {
-         display: none;
-    }
-
-   .reserve-btn {
-   background-color: rgb(255, 137, 3);
-   padding: 10px 15px 14px 15px;
-   border: none;
-   color: white;
-   font-weight: lighter;
-   font-size: 19px;
-   display: block;
-}
-
-.reserve-btn:active {
-    background-color: rgb(255, 148, 25);
-    color: grey;
-    transform: scale(1.1);
-    transition: 0.1s ease-in-out;
-}
-
     
-
-
     .drop-menu {
         position: absolute;
         top: 100%;
@@ -163,22 +71,6 @@
         width: 50%;
     }
 
-    nav details[open] .drop-menu {
-        display: block;
-        opacity: 1;
-        visibility: visible;
-        transform: translateY(0);
-    }
-
-    nav p a {
-        display: inline;
-        padding: 0.5rem;
-    }
-
-    #open-nav,
-    #close-nav {
-        display: none;
-    }
 
      .service-container {
       display: flex;
@@ -217,46 +109,7 @@
 
 
 @media screen and (min-width: 1301px) and (max-width: 3000px) {
-       nav {
-        position: static;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        width: 70%;
-        height: auto;
-        background-color: transparent;
-        padding: 0;
-        transform: translateX(0);
-        transition: none;
-        align-items: center;
-        text-align: center;
-    }
-
-     .reserve-btn2 {
-         display: none;
-    }
-
-   .reserve-btn {
-   background-color: rgb(255, 137, 3);
-   padding: 10px 15px 14px 15px;
-   border: none;
-   color: white;
-   font-weight: lighter;
-   font-size: 19px;
-   display: block;
-}
-
-.reserve-btn:active {
-    background-color: rgb(255, 148, 25);
-    color: grey;
-    transform: scale(1.1);
-    transition: 0.1s ease-in-out;
-}
-
-
-
-    .drop-menu {
+       .drop-menu {
         position: absolute;
         top: 100%;
         left: 0;
@@ -271,22 +124,7 @@
         width: 50%;
     }
 
-    nav details[open] .drop-menu {
-        display: block;
-        opacity: 1;
-        visibility: visible;
-        transform: translateY(0);
-    }
-
-    nav p a {
-        display: inline;
-        padding: 0.5rem;
-    }
-
-    #open-nav,
-    #close-nav {
-        display: none;
-    }
+    
 
      .service-container {
       display: flex;
