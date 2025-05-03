@@ -1,10 +1,8 @@
-
-  const carousel = document.getElementById("carousel");
+const carousel = document.getElementById("carousel");
   const nextBtn = document.getElementById("nextBtn");
   const prevBtn = document.getElementById("prevBtn");
-
-  let index = 0;
   const cards = document.querySelectorAll(".job-card");
+  let index = 0;
 
   function updateCarousel() {
     carousel.style.transform = `translateX(-${index * 100}%)`;
@@ -23,4 +21,3 @@
       updateCarousel();
     }
   });
-
