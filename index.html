@@ -15,9 +15,47 @@
    <!-- Header -->
     
     <header>
+        <nav class="navbar">
+            <img src="Images/Hero Image/logo.png" alt="logo here" width="100px">
       
+            <!-- Mobile menu toggle -->
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="hamburger">&#9776;</label>
+      
+            <ul class="nav-links">
+              <!-- Services Dropdown -->
+                <li><a href="#">Home</a></li>
+
+              <li class="dropdown">
+                <input type="checkbox" id="services-toggle" />
+                <label for="services-toggle" class="dropdown-label">Services</label>
+                <ul class="dropdown-menu" >
+                  <li><a href="#">Graphic Design</a></li>
+                  <li><a href="#">Web Design</a></li>
+                  <li><a href="#">Printing</a></li>
+                </ul>
+              </li>
+      
+              <!-- Venue Dropdown -->
+              <li class="dropdown">
+                <input type="checkbox" id="venue-toggle" />
+                <label for="venue-toggle" class="dropdown-label">Venue</label>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Lagos</a></li>
+                  <li><a href="#">Abuja</a></li>
+                </ul>
+              </li>
+      
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              </ul>
+            
+              <button id="btn">Reservation</button>
+            
+          </nav>
      
     </header>
+   
 
 <div class="social-sidebar">
   <a href="#" class="social-icon facebook" title="Facebook">
