@@ -5,19 +5,18 @@
   
 	.nav-links {
 	  flex-direction: column;
+	  justify-content: center;
 	  align-items: flex-start;
 	  position: absolute;
-	  background: #333;
-	  width: 100%;
-	  top: 70px;
-	  left: 60px;
+	  gap: 17px;
+	  background: white;
+	  width: 80%;
+	  top: 80px;
+	  left: 30vh;
 	  padding: 10px;
 	  display: none;
 	}
 
-	.navbar li {
-		color: white;
-	}
   
 	#menu-toggle:checked + .hamburger + .nav-links {
 	  display: flex;
