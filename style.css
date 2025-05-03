@@ -312,7 +312,6 @@ header {
 }
 
 
-
 .carousel-container {
   position: relative;
   width: 80%;
@@ -324,32 +323,33 @@ header {
 }
 
 .carousel-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+#carousel {
   display: flex;
   transition: transform 0.4s ease-in-out;
-  will-change: transform;
 }
 
 .job-card {
   flex: 0 0 100%;
-  box-sizing: border-box;
   padding: 20px;
+  box-sizing: border-box;
   text-align: center;
-}
-
-.job-card h3 {
-  margin-top: 0;
+  background-color: #333;
+  color: white;
 }
 
 .apply-btn {
   margin-top: 15px;
   padding: 10px 20px;
-  background-color: rgba(78, 78, 78, 0.377);
+  background-color: rgba(255, 255, 255, 0.2);
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
-
 
 .nav {
   position: absolute;
@@ -370,9 +370,7 @@ header {
 
 .right {
   right: 0;
-}
-
-/* Footer */
+}/* Footer */
 
 .footer-section {
     background-color: rgb(160, 159, 159);
